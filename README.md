@@ -1,9 +1,8 @@
 openapi: 3.0.0
-
 info:
-  title: SW2024 API
-  description: API de gerencia de usuários
+  title: User API
   version: 1.0.0
+  description: API para gerenciar usuários, incluindo criação, listagem, consulta por ID, atualização e exclusão.
 
 servers:
   - url: http://localhost:3000
