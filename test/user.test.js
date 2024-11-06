@@ -3,6 +3,8 @@ const app = require("../app");
 const chai = require("chai");
 const expect = chai.expect;
 
+const User = require("../models/User");
+
 describe("User API", () => {
   // Teste para GET /users
   it("should return all users", async () => {
@@ -59,10 +61,6 @@ describe("User API", () => {
 
     const response = await request(app).delete(`/users/${userId}`);
 
-    expect(response.status).to.equal(200);
-    expect(response.body).to.have.property(
-      "message",
-      "Usuário deletado com sucesso"
-    );
+    expect(response.status).to.equal(204);
   });
 });
