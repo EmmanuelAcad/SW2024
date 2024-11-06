@@ -1,3 +1,4 @@
+```
 openapi: 3.0.0
 
 info:
@@ -10,11 +11,10 @@ info:
 
 servers:
   - url: http://localhost:3000
-
+```
+```
 paths:
-
   /users:
-  
     get:
       summary: Lista todos os usuários
       responses:
