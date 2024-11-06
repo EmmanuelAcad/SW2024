@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../app"); // Supondo que app.js exporte o seu app Express
+const app = require("../app");
 const chai = require("chai");
 const expect = chai.expect;
 
