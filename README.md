@@ -1,14 +1,20 @@
 openapi: 3.0.0
+
 info:
+
   title: User API
+  
   version: 1.0.0
+  
   description: API para gerenciar usuários, incluindo criação, listagem, consulta por ID, atualização e exclusão.
 
 servers:
   - url: http://localhost:3000
 
 paths:
+
   /users:
+  
     get:
       summary: Lista todos os usuários
       responses:
@@ -44,6 +50,7 @@ paths:
           description: Erro ao criar usuário
 
   /users/{id}:
+  
     get:
       summary: Obtém um usuário pelo ID
       parameters:
@@ -110,7 +117,9 @@ paths:
           description: Erro ao deletar usuário
 
 components:
+
   schemas:
+  
     User:
       type: object
       properties:
